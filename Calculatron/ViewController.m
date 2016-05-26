@@ -47,6 +47,8 @@
         
 
     }else{
+        
+        self.title = [NSString stringWithFormat:@" %0.2f", op1 / op2];
 
     
 }
