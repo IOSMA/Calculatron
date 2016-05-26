@@ -27,6 +27,15 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)onOperationTapped:(UIButton *)sender {
+
+    self.label.text = sender.currentTitle;
+    if ([self.label.text isEqualToString:@"+"]) {
+        
+    }else if ([self.label.text isEqualToString:@"-"])
+    
+    }else if ([self.label.text isEqualToString:@"X"])
+{
+    }else{
 }
 
 @end
