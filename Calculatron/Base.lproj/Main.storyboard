@@ -41,14 +41,58 @@
                                     <constraint firstAttribute="height" constant="30" id="kq8-b3-Kre"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Zo7-nS-pea">
+                                <rect key="frame" x="0.0" y="108" width="600" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85w-YR-ye2">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                        <state key="normal" title="/"/>
+                                        <connections>
+                                            <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3nf-UF-eOh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyU-wY-rPe">
+                                        <rect key="frame" x="150" y="0.0" width="150" height="30"/>
+                                        <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4j-at-3Cw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80t-a9-iD7">
+                                        <rect key="frame" x="300" y="0.0" width="150" height="30"/>
+                                        <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O8r-gz-uz9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ph-fj-7FZ">
+                                        <rect key="frame" x="450" y="0.0" width="150" height="30"/>
+                                        <state key="normal" title="X"/>
+                                        <connections>
+                                            <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIW-WO-Rjt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="H6I-GC-pfw"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Zo7-nS-pea" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FDX-lm-ViL"/>
                             <constraint firstItem="Phu-hV-zki" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LbE-ml-b1D"/>
+                            <constraint firstAttribute="trailing" secondItem="Zo7-nS-pea" secondAttribute="trailing" id="Q3o-Ks-qjF"/>
+                            <constraint firstItem="Zo7-nS-pea" firstAttribute="top" secondItem="Phu-hV-zki" secondAttribute="bottom" constant="50" id="Rd2-Yf-Uaq"/>
                             <constraint firstItem="Phu-hV-zki" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="fXX-h0-5lI"/>
                             <constraint firstAttribute="trailing" secondItem="Phu-hV-zki" secondAttribute="trailing" id="nti-zR-2U7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="RLv-js-FbL" id="Pjf-a4-r3z"/>
+                        <outlet property="operandOne" destination="P0h-E2-dRp" id="O7t-uT-e4Z"/>
+                        <outlet property="operandTwo" destination="ZZe-Hh-dpk" id="bsA-H6-h17"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
