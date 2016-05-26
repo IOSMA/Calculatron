@@ -28,14 +28,24 @@
 }
 - (IBAction)onOperationTapped:(UIButton *)sender {
 
+
     self.label.text = sender.currentTitle;
     if ([self.label.text isEqualToString:@"+"]) {
         
-    }else if ([self.label.text isEqualToString:@"-"])
+    }else if ([self.label.text isEqualToString:@"-"]){
     
-    }else if ([self.label.text isEqualToString:@"X"])
-{
+    }else if ([self.label.text isEqualToString:@"X"]){
+
     }else{
+
+    double op1 = self.operandOne.text.doubleValue;
+    double op2 = self.operandTwo.text.doubleValue;
+    
+    
 }
+    
+}
+
+
 
 @end
