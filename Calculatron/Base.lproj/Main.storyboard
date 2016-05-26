@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pAc-6P-slu">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Phu-hV-zki">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Phu-hV-zki">
                                 <rect key="frame" x="0.0" y="28" width="600" height="30"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P0h-E2-dRp">
@@ -41,31 +41,31 @@
                                     <constraint firstAttribute="height" constant="30" id="kq8-b3-Kre"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Zo7-nS-pea">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Zo7-nS-pea">
                                 <rect key="frame" x="0.0" y="108" width="600" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85w-YR-ye2">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85w-YR-ye2">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
                                         <state key="normal" title="/"/>
                                         <connections>
                                             <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3nf-UF-eOh"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyU-wY-rPe">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyU-wY-rPe">
                                         <rect key="frame" x="150" y="0.0" width="150" height="30"/>
                                         <state key="normal" title="+"/>
                                         <connections>
                                             <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4j-at-3Cw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80t-a9-iD7">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80t-a9-iD7">
                                         <rect key="frame" x="300" y="0.0" width="150" height="30"/>
                                         <state key="normal" title="-"/>
                                         <connections>
                                             <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O8r-gz-uz9"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ph-fj-7FZ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ph-fj-7FZ">
                                         <rect key="frame" x="450" y="0.0" width="150" height="30"/>
                                         <state key="normal" title="X"/>
                                         <connections>
@@ -88,6 +88,7 @@
                             <constraint firstAttribute="trailing" secondItem="Phu-hV-zki" secondAttribute="trailing" id="nti-zR-2U7"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="s5f-Ag-h1h"/>
                     <connections>
                         <outlet property="label" destination="RLv-js-FbL" id="Pjf-a4-r3z"/>
                         <outlet property="operandOne" destination="P0h-E2-dRp" id="O7t-uT-e4Z"/>
@@ -96,6 +97,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1252" y="387"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B17-HK-ESu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pAc-6P-slu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TcH-XU-rcx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HBo-NP-Jvu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="It6-Ds-1Te" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="-305"/>
         </scene>
     </scenes>
 </document>

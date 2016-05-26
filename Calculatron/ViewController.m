@@ -27,20 +27,27 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)onOperationTapped:(UIButton *)sender {
-
-
-    self.label.text = sender.currentTitle;
-    if ([self.label.text isEqualToString:@"+"]) {
-        
-    }else if ([self.label.text isEqualToString:@"-"]){
     
-    }else if ([self.label.text isEqualToString:@"X"]){
-
-    }else{
-
+    
     double op1 = self.operandOne.text.doubleValue;
     double op2 = self.operandTwo.text.doubleValue;
     
+    self.label.text = sender.currentTitle;
+    if ([self.label.text isEqualToString:@"+"]) {
+        
+        self.title = [NSString stringWithFormat:@" %0.2f", op1 + op2];
+        
+        
+    }else if ([self.label.text isEqualToString:@"-"]){
+        self.title = [NSString stringWithFormat:@" %0.2f", op1  - op2];
+        
+    
+    }else if ([self.label.text isEqualToString:@"X"]){
+        self.title = [NSString stringWithFormat:@" %0.2f", op1 * op2];
+        
+
+    }else{
+
     
 }
     
